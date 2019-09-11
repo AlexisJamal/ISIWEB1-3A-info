@@ -1,0 +1,2 @@
+Quelques difficultés sur des petits details, par exemple mettre un bouton à la place d'un href pour supprimer et éditer. 
+J'ai un peu mélangé vue et controleur dans le fichier creneaux.php mais j'avais commencé avec ça donc j'ai pas changé.
