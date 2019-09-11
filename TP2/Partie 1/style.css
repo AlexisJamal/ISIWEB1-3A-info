@@ -1,0 +1,99 @@
+  
+
+p{       
+	text-align: justify;
+	overflow: auto;
+	font-family: "Times New Roman", "Arial Black", Arial, Verdana, sans-serif;
+}
+
+nav{  
+	float: left;
+	width: 150px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+a{
+	font-style: italic;
+	color: purple;
+	text-decoration: none;
+	display: block;
+}
+
+a:hover{
+	color: gray;
+}
+
+section{  
+	margin-left: 160px; 
+	height: 500px;
+	overflow: auto;
+}
+
+article, aside{          
+	display: inline-block; 
+	text-align: justify;  
+	vertical-align: top;
+}
+
+article{
+	width: 400px;
+	background-color: #C0C0C0;
+	border-radius: 5px;
+	color: black;
+	padding: 10px;
+}
+
+aside{
+	position: relative;
+	width: 200px;
+	background-color: #706b64;
+	border-radius: 5px;
+	margin-left: 15px;
+	padding: 10px;
+	color: white;
+	font-size: 0.9em;
+}
+
+body{      
+	width: 850px;
+	margin: auto;
+	margin-top: 20px;      
+	margin-bottom:  20px;
+	background-image: url("images/fond1.png");
+}  
+
+h1, h2{  
+	text-align: center;  
+}  
+
+header{  
+	width: 850px;    
+	height: 95px;  
+	background-image:url("images/banniere.jpg");  
+	background-repeat: no-repeat;    
+	margin-bottom: 10px;    
+	border-radius: 5px;  
+}
+
+footer{
+	text-align: right;
+	font-style: italic;
+}
+
+.photomajor{
+	margin-left: 25px;
+	width: 150px;
+	border: 1px solid white;
+}
+
+.lycee{
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	border: 1px solid white;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ 

@@ -1,0 +1,30 @@
+body {
+    font-family: Helvetica, Arial, Geneva, sans-serif;
+    font-size: 9px;
+    background-color: white;
+}
+
+.formulaire {
+    width: 500px;
+}
+
+label {
+    float: left;
+    width: 200px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.optionnel {
+    display: block;
+    font-style: italic;
+}
+
+.obligatoire {
+    display: block;
+    font-weight: bold;
+}
+
+.optHotel {
+    display : none;
+}

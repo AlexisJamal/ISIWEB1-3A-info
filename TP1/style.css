@@ -1,0 +1,42 @@
+.c1 {
+	background-color: powderblue;
+	font-family: verdana;
+	Font-Weight: Bold;
+	border: 2px solid black;
+	width: 150px;
+	text-align: center;
+}
+
+h1 {
+	color: black;
+	font-family: verdana;
+    font-size: 200%;
+	Font-Weight: Bold;
+}
+
+table {
+	margin-left:450px;
+	border: 2px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	border: 2px solid black;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button {
+	font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+	background-color: #4CAF50;
+    border: 2px solid green;
+	border-radius: 10px;
+    color: white;
+	padding: 10px 20px;
+}

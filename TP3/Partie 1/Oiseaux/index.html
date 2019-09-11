@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>HTML et CSS</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style_oiseau.css">
+
+	<script type="text/javascript">
+		var bouton_precedent=null;
+		function survol_bouton(bouton, numero) {
+			var nom;
+			var Obj;
+
+			nom = "oiseau" + numero + ".png";
+
+			if(bouton_precedent != null) bouton_precedent.className = "rubrique";
+
+			bouton.className = "selection";
+			bouton_precedent=bouton;
+
+			Obj=document.getElementById("oiseau");
+			Obj.src = "images_oiseaux/" + nom;
+		}
+	</script>
+
+</head>
+
+<body>
+	<p class="rubrique" onMouseOver="survol_bouton(this,1);">La Sitelle</p>
+	<p class="rubrique" onMouseOver="survol_bouton(this,2);">Le Goéland</p>
+	<p class="rubrique" onMouseOver="survol_bouton(this,3);">La Mésange</p>
+
+	<div id="corps">
+		<img id="oiseau"/>
+	</div>
+</body>
+</html>

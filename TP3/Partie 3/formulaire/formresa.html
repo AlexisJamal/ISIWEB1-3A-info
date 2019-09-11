@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulaire de réservation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="formresa_style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form name="reservation">
+            <fieldset class="formulaire">
+                <legend>
+                    <strong>Identité</strong>
+                </legend>
+                <div id="Dnom" class="obligatoire">
+                    <label for="nom" accesskey="n">Nom</label>
+                    <input name="nom" id="nom">
+                </div>
+                <div id="Dpnom" class="obligatoire">
+                    <label for="pnom" accesskey="p">Prénom</label>
+                    <input name="pnom" id="pnom">
+                </div>
+                <div id="Dmail" class="obligatoire">
+                    <label for="mail" accesskey="m">e-mail</label>
+                    <input name="mail" id="mail">
+                </div>
+                <div id="Dadresse" class="optionnel">
+                    <label for="adresse" accesskey="a">Adresse</label>
+                    <input name="adresse" id="adresse" size=40>
+                </div>
+                <div id="Dtel" class="optionnel">
+                    <label for="tel" accesskey="t">Téléphone</label>
+                    <input name="tel" id="tel">
+                </div>
+            </fieldset>
+            <fieldset class="formulaire_heberg">
+                <legend>
+                    <strong>Hébergement</strong>
+                </legend>
+                <div id="Dhotel" class="obligatoire">
+                    <label for="hotel" accesskey="h">Réserver un hôtel</label>
+                    <input name="hotel" id="hotel" type="checkbox" onclick="optHotel();">
+                </div>
+                <div id="Dchambre" class="optHotel">
+                    <label for="simple" accesskey="s">Chambre simple</label>
+                    <input name="chambre" id="simple" type="radio"><br />
+                    <label for="double" accesskey="m">Chambre double</label>
+                    <input name="chambre" id="double" type="radio">
+                </div>
+            </fieldset>
+        </form>
+        <form name="visuopt">
+            <label for="voiroupas" accesskey="o"><i>Cacher les champs optionnels</i></label>
+            <input name="voiroupas" type="checkbox" id="voiroupas" onclick="modifOpt();" />
+        </form>
+        <script src="formresa_script.js"></script>
+    </body>
+</html>

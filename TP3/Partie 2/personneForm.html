@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>HTML et CSS</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="personneStyles.css">
+
+</head>
+
+<body>
+	
+	<table class="personne">
+		<tr>
+			<td><label for="civilite">Civilité :</label></td>
+			<td><input type="text" name="civilite" id="civilite" value="Monsieur" onFocus="clic_civilite(this);"/></td>
+			<td class="message_aide">Cliquer sur la civilité pour la modifier</td>
+		</tr>
+		<tr>
+			<td><label for="idvil">Ville</label></td>
+			<td><input type="text" name="ville" id="idvil" value="LYON" onFocus="clic_ville();"/></td>
+			<td class="message_aide"></td>
+		</tr>
+		<tr>
+			<td><label for="age">Age</label></td>
+			<td><input type="text" name="age" id="age" size="2" maxlength="2" onKeyPress="return(testNumerique(event));"/></td>
+			<td class="message_aide">Seuls les caractères numériques sont acceptés <br/> (2 maximum)</td>
+		</tr>
+		<tr>
+			<td><label for="naissance">Année de naissance</label></td>
+			<td>
+				<input type="text" name="naissance" id="naissance" value="1970" onSelect="bloque_champ(this);" onFocus="bloque_champ(this);"/>
+				<input type="button" value="-" onClick="clic_moins()"/>
+				<input type="button" value="+" onClick="clic_plus()"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="email">E-mail</label></td>
+			<td><input type="text" name="email" id="email" size="30" onChange="verifieMail(this);"/></td>
+		</tr>
+	</table>
+
+</body>
+
+<script src="personneControles.js"></script>
+
+</html>

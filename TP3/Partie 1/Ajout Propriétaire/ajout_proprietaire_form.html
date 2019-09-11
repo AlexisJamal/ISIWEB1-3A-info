@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-esquiv="Content-Type" content="text/html" charset="UTF-8" />
+	<title>Ajout d'un propriétaire</title>
+	<style></style>
+	<script></script>
+</head>
+
+<body>
+	<h1 style="text-align:center"> Ajout d'un propriétaire </h1>
+	<br/>
+	<div align="center">
+		<form name="identification" method="get" action="ajout_proprietaire.php" onsubmit="raturn teste();">
+			<p>
+				<label for="nom"> Nom du proprietaire : </label>
+				<input type="text" name="nom" id="nom" value="" />
+			</p>
+			<p>
+				<label for="prenom"> Prénom du proprietaire : </label>
+				<input type="text" name="prenom" id="prenom" value="" />
+			</p>
+			<br/>
+			<input type="submit" name="bt" value="Valider" />
+			<input type="reset" name="bt" value="Annuler" />
+		</form>
+	</div>
+</body>
+</html>
+
+<style type="text/css">
+	label{
+		font-family: arial, sans-serif;
+		color:#004080;
+		text-align:right;
+		width: 200px;
+	}
+</style>
+
+<script type="text/javascript">
+	function teste() {
+		var ok=true;
+
+		if(document.identification.nom.value == "") {
+			alert("Veuillez entrer votre nom");
+			ok=false;
+		}
+		else if(document.identification.prenom.value == "") {
+			alert("Veuillez entrer votre prenom");
+			ok=false;
+		}
+		return ok;
+	}
+</script>

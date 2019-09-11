@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Petit QUIZZ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="langages_styles.css" rel="stylesheet">
+    </head>
+    <body>
+    	<h1 class="titre">Petit QUIZZ</h1>
+        <table border='1'>
+            <tr>
+                <td>
+                    <p><img id='image' src='langage.gif' alt='Langage à interpréter...'></p>
+                </td>
+                <td class='cellule_avec_bords'>
+                    <h2>Parmi les langages suivants, lesquels sont interprétés ?</h2>
+                    <form name='choixMultiple'>
+                        1 <input type='checkbox' name='cases' id='cb1' value='C' 
+                                 onclick='clic_langage2(this);' />
+                        <label id='lab1' class='initial'> C </label><br />
+                        2 <input type='checkbox' name='cases' id='cb2' value='Java' 
+                                 onclick='clic_langage2(this);' />
+                        <label id='lab2' class='initial'> Java </label><br />
+                        3 <input type='checkbox' name='cases' id='cb3' value='JavaScript' 
+                                 onclick='clic_langage2(this);' />
+                        <label id='lab3' class='initial'> JavaScript </label><br />
+                        4 <input type='checkbox' name='cases' id='cb4' value='C#' 
+                                 onclick='clic_langage2(this);' />
+                        <label id='lab4' class='initial'> C# </label><br />
+                        5 <input type='checkbox' name='cases' id='cb5' value='VBA' 
+                                 onclick='clic_langage2(this);' />
+                        <label id='lab5' class='initial'> VBA </label><br />
+                        6 <input type='checkbox' name='cases' id='cb6' value='PHP' 
+                                 onclick='clic_langage2(this);' />
+                        <label id='lab6' class='initial'> PHP </label><br />
+                        <br />
+                        <input type="button" name="boutest" value="Tester" onclick="tester();" />
+                        <input type="button" name="bouaide" value="Aide" onclick="aider();" />
+                        <input type="button" name="bouaidesup" value="Aide supplémentaire" onclick="aider_sup();" />
+                        <input type="button" name="bouevaluation" value="Evaluation" onclick="evaluer1();" />
+                        <input type="button" name="boucorrection" value="Correction" onclick="corriger();" />
+                        <input type="button" name="boureinit" value="Reinitialiser" onclick="reinitialiser();" />
+                        <p>
+                            Nombre d'évaluation : <span id='nbEval'>0</span>
+                        </p>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <script src="langages_scripts.js"></script>
+    </body>
+</html>

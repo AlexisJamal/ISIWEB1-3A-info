@@ -1,0 +1,15 @@
+body {
+	font-family: helvetica, arial, geneva, sans-serif;
+	font-size: 10px;
+	background-color: white;
+}
+
+table.personne {
+	background-color: #FFFFF3;
+}
+
+td.message_aide {
+	color: #00FF00;
+	font-family: helvetica, arial, geneva, sans-serif;
+	font-size: 10px;
+}
